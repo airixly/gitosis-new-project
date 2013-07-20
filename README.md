@@ -11,8 +11,9 @@ put the "tool" directory in your "gitosis-admin" folder,then run this command:
 sh gitosis.sh project_name
 ```
 
-* "project_name" is the git project name you want to generate
-* "authority.conf" authorize the users (just like "user1,user2,user3…" in this file) to write repositories as needed (make sure the "USER.pub" file exist in  "gitosis-admin/keys/" directory)  
+"project_name" is the git project name you want to generate,then a new project named "project_name" will be created at the same directory with "gitosis-admin".
+
+"authority.conf" authorize the users (just like "user1,user2,user3…" in this file) to read/write repositories as needed (make sure the "USER.pub" file exist in  "gitosis-admin/keydir/" directory).  
 
 
 
