@@ -17,9 +17,3 @@ sh gitosis.sh project_name
 * "authority.conf" authorize the users (just like "user1,user2,user3…" in this file) to read/write repositories as needed (make sure the "user1.pub,user2.pub,user3.pub…" files exist in  "gitosis-admin/keydir/" directory).**You must change "user1,user2,user3" to the *.pub files' prefix in the folder "keydir".** 
 
 * "gitignore.tpl" will be renamed to file ".gitignore" in the project you have created,it contains some default rules. 
-
-
-
-
-	
-
