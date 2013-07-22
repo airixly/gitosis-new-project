@@ -8,6 +8,7 @@ if [ -n "$1" ]; then
 	echo ">>Register project ..."
 	echo "\n[group $1]\nwritable = $1" >> ../gitosis.conf
 	cat authority.conf >> ../gitosis.conf
+	cp gitignore.tpl ../../gitignore.tpl
 
 	echo "\n>>Sync to server ..."
 	cd ../
@@ -18,7 +19,7 @@ if [ -n "$1" ]; then
 	echo "\n>>Create git repository named $1 ..."
 	cd ../
 	mkdir "$1" && cd "$1"
-	cp ../.gitignore .gitignore
+	mv ../gitignore.tpl .gitignore
 	git init
 	git add .gitignore
 	git commit -m 'add ignore file'
