@@ -5,3 +5,6 @@ classes/
 .DS_Store
 *.iml
 *.class
+.project
+.settings
+.classpath
