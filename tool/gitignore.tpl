@@ -1,19 +1,19 @@
-#jetbrains
+#jetbrains#
 .idea/
 *.iml
 
-#MAC OS
+#MAC OS#
 .DS_Store
 
-#vim
+#vim#
 *.swp
 *.bak
 
-#eclipse
-bin/
-classes/
-*.class
+#eclipse#
+/bin/
+/classes/
+.settings/
 .project
-.settings
+.buildpath
 .classpath
 MANIFEST.MF
