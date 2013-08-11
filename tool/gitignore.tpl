@@ -17,3 +17,9 @@
 .buildpath
 .classpath
 MANIFEST.MF
+
+#CVS#
+/CVS/*
+*/CVS/*
+.cvsignore
+*/.cvsignore
