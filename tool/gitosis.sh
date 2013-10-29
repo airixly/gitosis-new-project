@@ -8,7 +8,7 @@ if [ -n "$1" ]; then
 	echo ">>Register project ..."
 	echo "\n[group $1]\nwritable = $1" >> ../gitosis.conf
 	cat authority.conf >> ../gitosis.conf
-	cp gitignore.tpl ../../gitignore.tpl
+	cp gitignore.temp ../../gitignore.temp
 
 	echo "\n>>Sync to server ..."
 	cd ../
@@ -19,11 +19,11 @@ if [ -n "$1" ]; then
 	echo "\n>>Create git repository named $1 ..."
 	cd ../
 	mkdir "$1" && cd "$1"
-	mv ../gitignore.tpl .gitignore
+	mv ../gitignore.temp .gitignore
 	git init
 	git add .gitignore
 	git commit -m 'add ignore file'
-	git remote add origin yfgit@172.18.68.43:$1
+	git remote add origin $2:$1
 	git push origin master
 else
 	echo "Error: Please input a project name"
