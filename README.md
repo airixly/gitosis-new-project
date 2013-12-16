@@ -8,8 +8,11 @@ Get gitosis on <https://github.com/res0nat0r/gitosis>
 put the "tool" directory under your "gitosis-admin" folder,then run this command:
 
 ```shell
-sh gitosis.sh project_name
+sh gitosis.sh project_name remote_url
 ```
+
+you can replace '$2' in gitosis.sh with your remote_url,so you don't need to type remote_url every time.
+
 ##Setting
 
 * "project_name" is the git project name you want to generate,then a new project named "project_name" will be created at the same directory with "gitosis-admin".
