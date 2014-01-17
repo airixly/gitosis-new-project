@@ -1,6 +1,7 @@
 Gitosis-new-project
 --------------------
-A shell script for gitosis to generate a new git repository.
+A utility for gitosis to create a new git repository.
+
 Get gitosis on <https://github.com/res0nat0r/gitosis>
 
 ##Usage
@@ -15,8 +16,8 @@ you can replace '$2' in gitosis.sh with your remote_url,so you don't need to typ
 
 ##Setting
 
-* "project_name" is the git project name you want to generate,then a new project named "project_name" will be created at the same directory with "gitosis-admin".
+* "project_name" is the git project you want to create,it will be placed in the same directory with "gitosis-admin".
 
-* "authority.conf" authorize the users (just like "user1,user2,user3…" in this file) to read/write repositories as needed (make sure the "user1.pub,user2.pub,user3.pub…" files exist in  "gitosis-admin/keydir/" directory).
+* replace "your_pub_prefix" in authority.conf with your name(make sure the your_name.pub file exists under gitosis-admin/keydir/).
 
-* "gitignore.tpl" will be renamed to file ".gitignore" in the project you have created,it contains some default rules. 
+* "gitignore.tpl" will be renamed to file ".gitignore" in the new project you have just created. 
