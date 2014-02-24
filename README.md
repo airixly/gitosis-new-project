@@ -2,6 +2,8 @@ Gitosis-new-project
 --------------------
 A utility for gitosis to create a new git repository.
 
+Youngfriend.cn test pull-request
+
 Get gitosis on <https://github.com/res0nat0r/gitosis>
 
 ##Usage
