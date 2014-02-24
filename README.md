@@ -2,8 +2,6 @@ Gitosis-new-project
 --------------------
 A utility for gitosis to create a new git repository.
 
-Youngfriend.cn test pull-request
-
 Get gitosis on <https://github.com/res0nat0r/gitosis>
 
 ##Usage
@@ -11,15 +9,15 @@ Get gitosis on <https://github.com/res0nat0r/gitosis>
 put the "tool" directory under your "gitosis-admin" folder,then run this command:
 
 ```shell
-sh gitosis.sh project_name remote_url
+sh gitosis.sh name url
 ```
 
-you can replace '$2' in gitosis.sh with your remote_url,so you don't need to type remote_url every time.
+you can replace '$2' in gitosis.sh with your url,then you don't need to type it every time.
 
 ##Setting
 
-* "project_name" is the git project you want to create,it will be placed in the same directory with "gitosis-admin".
+* "name" is the git project you want to create,it will be placed in the same directory with "gitosis-admin".
 
-* replace "your_pub_prefix" in authority.conf with your name(make sure the your_name.pub file exists under gitosis-admin/keydir/).
+* replace "your_pub_prefix" in authority.conf with the name of your_pub_prefix.pub(make sure the your_pub_prefix.pub file exists under gitosis-admin/keydir/).
 
 * "gitignore.tpl" will be renamed to file ".gitignore" in the new project you have just created. 
